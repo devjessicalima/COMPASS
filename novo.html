@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPASS</title>
+    <style>
+        /* CSS do arquivo styles.css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #2F4F4F;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .section-image {
+            width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: #2F4F4F;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        button:hover {
+            background: #008080;
+        }
+
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        form label {
+            margin-top: 0.5rem;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            align-self: start;
+        }
+
+        footer {
+            background: #2F4F4F;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .logo {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+
+        .icone {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo a COMPASS</h1>
+        <img src="compassp.jpg" alt="nos" class="logo">
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#ajudar">Serviços</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#cadastre-se">Cadastre-se</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>A COMPASS foi criada com o objetivo de diminuir o grande índice de desperdícios em grandes corporações, direcionando os recursos para onde realmente são necessários. Realizamos uma mediação entre as grandes empresas e pessoas em situação de desemprego que têm acesso à internet ou ONGs que buscam recursos como alimentos para ações beneficentes.</p>
+        <p>Na COMPASS, acreditamos no poder da colaboração e da solidariedade. Esse projeto não apenas ajuda os beneficiários, mas também gera incentivos fiscais para as empresas que participam dessa colaboração solidária. Venha fazer parte dessa missão e nos ajude a criar um mundo melhor.</p>
+        <img src="fotogrupo.jpeg" alt="Imagem Sobre Nós" class="section-image">
+    </section>
+
+    <section id="ajudar">
+        <h2>Serviços</h2>
+        <p>Cada ação conta, e a sua participação pode transformar vidas. Se você é uma empresa interessada em fazer a diferença e ajudar sua comunidade, entre em contato conosco. Juntos, podemos construir um futuro onde todos tenham acesso ao alimento necessário.</p>
+        <p>Em vez de permitir que grandes quantidades de alimentos sejam desperdiçadas devido à proximidade da data de validade, as empresas podem doar esses produtos algumas semanas antes do vencimento, beneficiando pessoas em situação de necessidade. Além de contribuir para a redução do desperdício e apoio social, essa ação pode proporcionar incentivos fiscais, especialmente para doações de alimentos não perecíveis.</p>
+        <p>Existem várias maneiras de você contribuir para nossa causa:</p>
+        <ul>
+            <li>Fazer uma doação financeira.</li>
+            <li>Doar alimentos não perecíveis.</li>
+            <li>Voluntariar seu tempo para ajudar na distribuição de alimentos.</li>
+        </ul>
+        <button id="donateBtn">Faça uma Doação</button>
+    </section>
+
+    <section id="portifolio">
+        <h2>Portifólio</h2>
+        <div class="project">
+            <h3>Projeto Alimento do Futuro</h3>
+            <p>Estamos trabalhando para fornecer alimentos saudáveis para crianças em escolas públicas. Este projeto visa melhorar a nutrição e o bem-estar das crianças.</p>
+        </div>
+        <div class="project">
+            <h3>Banco de Alimentos</h3>
+            <p>Operamos um banco de alimentos que coleta, armazena e distribui alimentos para famílias em situação de vulnerabilidade.</p>
+        </div>
+    </section>
+
+    <section id="cadastre-se">
+        <h2>Cadastre-se</h2>
+        <p>Se você é uma ONG ou pessoa física em situação de desemprego e deseja adquirir o benefício, preencha o formulário abaixo ou envie um e-mail para <a href="mailto:redecompass@ajuda.com.br">redecompass@ajuda.com.br</a>.</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="contatos">
+        <h2>COMPASS nas redes:</h2>
+        <img src="instagramlogo.png" alt="Ícone do Instagram" class="icone"> @redecompass
+        <img src="facebooklogo.png" alt="Ícone do Facebook" class="icone"> Rede Compass
+        <img src="youtubelogo.png" alt="Ícone do YouTube" class="icone"> @REDECOMPASS
+        <br>
+    </section>
+
+    <footer>
+        <p>&copy; Projeto em empreendedorismo / versão 1.0-2024</p>
+    </footer>
+
+    <script>
+        // JavaScript do arquivo script.js
+        document.addEventListener('DOMContentLoaded', () => {
+            const donateBtn = document.getElementById('donateBtn');
+
+            donateBtn.addEventListener('click', () => {
+                alert('Obrigado por considerar fazer uma doação! Visite nossa página de doações para mais informações.');
+            });
+        });
+    </script>
+</body>
+</html>
